@@ -70,7 +70,7 @@ def main():
     # get json data by making a request
     data = get_json_data(url)
     # rearrange data and print
-    print(rearrange_data(data, className, typeName, repoName))
+    print(json.dumps(rearrange_data(data, className, typeName, repoName),indent=4))
     
 
 if __name__ == '__main__':
